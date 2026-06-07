@@ -9,7 +9,7 @@ pipeline {
     }
 
     options {
-        disabledConcurrentBuilds()  // this will disable 2 builds at a time this will be helpful for prod env
+        // disabledConcurrentBuilds()  // this will disable 2 builds at a time this will be helpful for prod env
         timeout(time: 5, unit: 'MINUTES')
     }
      parameters {
