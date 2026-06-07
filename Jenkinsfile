@@ -9,7 +9,7 @@ pipeline {
     }
 
     options {
-        disabledConcurrentBuilds()  // this is will disable 2 builds at a time this will be helpful for prod env
+        disabledConcurrentBuilds()  // this will disable 2 builds at a time this will be helpful for prod env
         timeout(time: 5, unit: 'SECONDS')
     }
      parameters {
@@ -59,8 +59,8 @@ pipeline {
         }
 
         //  post Build it will execute alwasy
-
-        post {
+    }
+     post {
             alwasy {
                 echo 'I will execute always'
             }
@@ -72,6 +72,4 @@ pipeline {
                 echo "pipeline failure"
             }
         }
-    
-    }
 }
