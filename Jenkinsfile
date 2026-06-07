@@ -10,7 +10,7 @@ pipeline {
 
     options {
         disabledConcurrentBuilds()  // this will disable 2 builds at a time this will be helpful for prod env
-        timeout(time: 5, unit: 'SECONDS')
+        timeout(time: 5, unit: 'MINUTES')
     }
      parameters {
         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
@@ -61,7 +61,7 @@ pipeline {
         //  post Build it will execute alwasy
     }
      post {
-            alwasy {
+            always {
                 echo 'I will execute always'
             }
             // this secction will be useful for sedning alter to team via email or teams message
