@@ -74,7 +74,7 @@ pipeline {
             }
             // this secction will be useful for sedning alter to team via email or teams message
             success { 
-                echo "pipeline success"  
+                echo "pipeline success"
             }
             failure{
                 echo "pipeline failure" 
