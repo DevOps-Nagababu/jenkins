@@ -72,7 +72,7 @@ pipeline {
             always {
                 echo 'I will execute always'
             }
-            // this secction will be useful for sedning alter to team via email or teams message and slack
+            // this secction will be useful for sedning alter to team via email or teams message
             success { 
                 echo "pipeline success"
             }
